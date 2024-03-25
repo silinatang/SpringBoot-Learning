@@ -7,6 +7,10 @@
 <body>
 <h1>文件上传页面</h1>
 <form method="post" action="/upload" enctype="multipart/form-data">
+    <!--<form>标签定义了一个表单，用户可以在其中输入数据并将数据提交给服务器。
+    method="post"属性表示使用HTTP POST方法提交表单数据；
+    action="/upload"属性表示表单数据将被提交到服务器上的"/upload"路径；
+    enctype="multipart/form-data"属性表示表单数据将使用"multipart/form-data"编码类型进行编码，这种编码类型适用于文件上传-->
     选择要上传的文件：<input type="file" name="file"><br>
     <hr>
     <input type="submit" value="提交">

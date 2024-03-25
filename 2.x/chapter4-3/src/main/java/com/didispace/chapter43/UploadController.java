@@ -23,10 +23,11 @@ public class UploadController {
     @GetMapping("/")
     public String uploadPage() {
         return "upload";
-    }
+    } /*对应模板的upload.html界面*/
 
     @PostMapping("/upload")
     @ResponseBody
+    /*这个方法处理POST请求到"/upload"路径，这通常是文件上传表单的提交路径。它接收一个MultipartFile参数，这是Spring MVC用于处理上传文件的类*/
     public String create(@RequestPart MultipartFile file) throws IOException {
         String fileName = file.getOriginalFilename();
         String filePath = path + fileName;

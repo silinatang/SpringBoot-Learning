@@ -1,14 +1,14 @@
-package com.didispace.demo;
+package com.didispace.chapter27;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import java.util.List;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 
 import javax.validation.Valid;
 import java.util.ArrayList;
-import java.util.List;
 
 @Api(tags="用户管理")
 @RestController

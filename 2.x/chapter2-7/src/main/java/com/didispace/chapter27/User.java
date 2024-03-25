@@ -1,4 +1,4 @@
-package com.didispace.demo;
+package com.didispace.chapter27;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
